@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NOIR Studio | Premium Men's Grooming</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--gold:#c9a84c;
+--cream:#f0ece0;
+--black:#0b0b0b;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:var(--black);
+color:var(--cream);
+font-family:Inter,sans-serif;
+line-height:1.6;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:72px;
+letter-spacing:4px;
+color:var(--gold);
+}
+
+.hero p{
+margin-top:15px;
+font-size:20px;
+opacity:.9;
+}
+
+.hero button{
+margin-top:35px;
+padding:15px 38px;
+border:1px solid var(--gold);
+background:transparent;
+color:var(--gold);
+font-size:16px;
+cursor:pointer;
+transition:.4s;
+}
+
+.hero button:hover{
+background:var(--gold);
+color:black;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+color:var(--gold);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:35px;
+border:1px solid rgba(255,255,255,0.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+border-color:var(--gold);
+}
+
+.card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:26px;
+margin-bottom:10px;
+}
+
+.price{
+color:var(--gold);
+margin-top:10px;
+font-size:20px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+/* MAP */
+
+.map iframe{
+width:100%;
+height:350px;
+border:0;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:30px;
+text-decoration:none;
+font-size:14px;
+}
+
+/* ANIMATION */
+
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:.8s;
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
+}
+
+footer{
+text-align:center;
+padding:30px;
+opacity:.6;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero fade-up">
+<div>
+<h1>NOIR Studio</h1>
+<p>Luxury Grooming for the Modern Gentleman</p>
+<button>Book Appointment</button>
+</div>
+</div>
+
+<section>
+<h2 class="section-title fade-up">Signature Services</h2>
+
+<div class="services">
+
+<div class="card fade-up">
+<h3>Executive Haircut</h3>
+<p>Precision haircut designed for modern gentlemen.</p>
+<div class="price">₹500</div>
+</div>
+
+<div class="card fade-up">
+<h3>Beard Sculpt</h3>
+<p>Hot towel beard trim and luxury shaping.</p>
+<div class="price">₹300</div>
+</div>
+
+<div class="card fade-up">
+<h3>Royal Grooming</h3>
+<p>Haircut + beard + relaxing head massage.</p>
+<div class="price">₹900</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title fade-up">Studio Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+<img src="https://images.unsplash.com/photo-1599351431405-6f6b9f5c3a9e">
+<img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af">
+<img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70">
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title fade-up">Visit Our Studio</h2>
+
+<div class="map fade-up">
+
+<iframe src="https://maps.google.com/maps?q=barbershop&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 NOIR Studio — Premium Grooming Studio
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917080806187">WhatsApp Booking</a>
+
+<!-- AI CHATBOT -->
+
+<div id="ai-chat" style="position:fixed;bottom:90px;right:25px;width:320px;background:#111;border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:15px;font-family:Inter,sans-serif;display:none;z-index:999">
+
+<div style="color:#c9a84c;margin-bottom:8px;font-weight:500">
+NOIR AI Assistant
+</div>
+
+<div id="messages" style="height:220px;overflow:auto;font-size:14px;margin-bottom:10px"></div>
+
+<input id="msg" placeholder="Ask about services..." style="width:70%;padding:8px;border:none;background:#222;color:white">
+
+<button onclick="send()" style="padding:8px 12px;background:#c9a84c;border:none;cursor:pointer;margin-left:4px">
+Send
+</button>
+
+</div>
+
+<div onclick="toggleChat()" style="position:fixed;bottom:90px;right:25px;background:#c9a84c;color:black;padding:14px 16px;border-radius:50%;cursor:pointer;font-weight:bold;z-index:999">
+AI
+</div>
+
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show")
+}
+})
+})
+
+document.querySelectorAll('.fade-up').forEach(el=>{
+observer.observe(el)
+})
+
+function toggleChat(){
+const chat=document.getElementById("ai-chat")
+chat.style.display=
+chat.style.display==="none"?"block":"none"
+}
+
+async function send(){
+
+let msg=document.getElementById("msg").value
+
+document.getElementById("messages").innerHTML+=
+"<p><b>You:</b> "+msg+"</p>"
+
+let res=await fetch("/api/chat",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({message:msg})
+})
+
+let data=await res.json()
+
+document.getElementById("messages").innerHTML+=
+"<p><b>AI:</b> "+data.reply+"</p>"
+
+}
+
+</script>
+
+</body>
+</html>
